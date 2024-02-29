@@ -8,15 +8,13 @@ print("Hi there! Welcome to chatbot service of TiTi University:)",
 # get users name and make a customize respond
 print("------------------------------------")
 name = input("My name is Chiti! What's yours name? ")
-name = name.upper()
-name = name.strip()
+name = name.upper().strip()
 print(f"Nice to meet you {name}")
 
 # get users country and make a customize respond
 print("------------------------------------")
 country = input("Where are you from budy? ")
-country = country.lower()
-country = country.strip()
+country = country.lower().strip()
 
 if country == 'france':
     print("I really like your contry. Eiffel Tower, the Louvre Museum and",
@@ -63,8 +61,7 @@ else :
 # get users favourite colour and make a customize respond
 print("------------------------------------")
 colour = input("Let's know about our common interest!\nWhat's your favourite colour? ")
-colour = colour.lower()
-colour = colour.strip()
+colour = colour.lower().strip()
 
 if colour == 'blue' :
     print("Well, Lovely colour!\nDid you know there is a blue-lover club in the Universit?",
@@ -94,8 +91,7 @@ else :
 print("------------------------------------")
 faculty = input("What faculty do you belong to? (business, engineering, science,"
                 "arts design & architecture, law & justice, medicine): ")
-faculty = faculty.lower()
-faculty = faculty.strip()
+faculty = faculty.lower().strip()
 
 if faculty == 'business':
     print("I'm sure you can equip yourself with the knowledge, skills,", 
@@ -124,8 +120,7 @@ else :
 
 print("------------------------------------")
 major = input("What's your major? ")
-major = major.lower()
-major = major.strip()
+major = major.lower().strip()
 print(f"Good luck {name}! The {major} is one of the most amazing majors in the TiTi University.")
 
 print("------------------------------------")
@@ -160,8 +155,7 @@ done = True
 while  done :
     question = input("Please let me know if you have any question about the University."
                 "\n(if you don't just say bye): ")
-    question = question.lower()
-    question = question.strip()
+    question = question.lower().strip()
 
     if question in question_list:
         question_num = question_list.index(question)
@@ -178,8 +172,7 @@ while  done :
         print ("I think you should talk to a faculty staff")
         print("------------------------------------")
         info = input("Do you need the contact information? ") # the answer can be yes, no or anything else
-        info = info.lower()
-        info = info.strip()
+        info = info.lower().strip()
 
         if info == "yes" :
             print("Sure, I'll send you email and contact number. It is better to make an appointment first.")
